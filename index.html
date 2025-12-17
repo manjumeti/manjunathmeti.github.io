@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjunath Meti - Splunk Architect</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h2 {
+            margin: 10px 0 0;
+            font-weight: 400;
+            color: var(--accent-color);
+        }
+
+        header .contact-info {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #bdc3c7;
+        }
+
+        /* Section Styles */
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Experience Items */
+        .job-entry {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .job-entry:last-child {
+            border-bottom: none;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--primary-color);
+        }
+
+        .job-company {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Skills Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: #eaf2f8;
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        /* Certifications List */
+        .cert-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .cert-list li {
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .cert-list li::before {
+            content: "🏆";
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 0.85em;
+            color: #7f8c8d;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .job-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Manjunath Meti</h1>
+            <h2>Software Developer & Architect | Splunk Trust Member & MVP</h2>
+            <div class="contact-info">
+                Bengaluru, Karnataka, India<br>
+                <a href="mailto:mymanjunath15@gmail.com" style="color: #bdc3c7; text-decoration: none;">mymanjunath15@gmail.com</a>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h3>Professional Profile</h3>
+                <p>
+                    Throughout my 10-year career, I have developed a skill set directly relevant to Data Engineering, AI/ML, Splunk Developer/Architect, and CI/CD automation roles.
+                </p>
+                <p>
+                    Building the platform which extracts, monitors, and analyses operational data ensuring it continuously meets specifications in terms of business requirements (SLAs), application design (standards), and infrastructure performance (KPIs).
+                </p>
+            </section>
+
+            <section>
+                <h3>Technical Expertise</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">Splunk Architecture</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">PySpark</span>
+                    <span class="skill-tag">AWS (EC2, S3, Lambda)</span>
+                    <span class="skill-tag">Docker & Kubernetes</span>
+                    <span class="skill-tag">Ansible</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">Apache Spark</span>
+                    <span class="skill-tag">Kafka</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Service Now, ScienceLogic, Nagios, Zabbix</span>
+                </div>
+            </section>
+
+            <section>
+                <h3>Professional Experience</h3>
+                
+                <div class="job-entry">
+                    <div class="job-header">
+                        <span class="job-title">Software Engineer III</span>
+                        <span class="job-company">Cisco Systems | Bengaluru, India | 2021 - Present</span>
+                    </div>
+                    <ul>
+                        <li>Designed and implemented Splunk deployment architecture, including indexers, forwarders, search heads, SHC deployers, and deployment servers.</li>
+                        <li>Ensured high availability and disaster recovery through effective Splunk deployment strategies.</li>
+                        <li>Implemented Splunk RBAC and integrated Splunk with LDAP and SAML for authentication.</li>
+                        <li>Leveraged Apache Spark for distributed data processing and analysis.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="job-header">
+                        <span class="job-title">Software Engineer II</span>
+                        <span class="job-company">Cisco Systems | Bengaluru, India | 2017 - 2021</span>
+                    </div>
+                    <ul>
+                        <li>Designed Splunk solutions to monitor machine data, enabling proactive identification of system issues and security threats.</li>
+                        <li>Optimized search performance using summary indexing and data model acceleration, reducing search execution time by 30%.</li>
+                        <li>Developed interactive dashboards using custom search queries and advanced visualizations.</li>
+                        <li>Implemented containerization technologies like Docker and Kubernetes for efficient deployment.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="job-header">
+                        <span class="job-title">Software Engineer I</span>
+                        <span class="job-company">Cisco Systems | Pune, India | July 2015 - 2017</span>
+                    </div>
+                    <ul>
+                        <li>Contributed to the successful onboarding of data into Splunk from diverse sources.</li>
+                        <li>Leveraged AWS (EC2, S3, Lambda, CloudWatch) for deploying and managing applications.</li>
+                        <li>Utilized monitoring tools such as ScienceLogic, Nagios, and Zabbix for network system management.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Certifications & Awards</h3>
+                <ul class="cert-list">
+                    <li>Splunk Enterprise Certified Architect</li>
+                    <li>Splunk Enterprise Certified Admin</li>
+                    <li>Splunk Core Certified Power User</li>
+                    <li>Industry Recognition: Splunk Trust Member and MVP</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Education</h3>
+                <div class="job-entry">
+                    <div class="job-header">
+                        <span class="job-title">B.E. Electronics and Communication</span>
+                        <span class="job-company">M. S. Ramaiah Institute of Technology, Bengaluru</span>
+                    </div>
+                    <p>Graduated: 2015 | GPA: 9.02/10</p>
+                </div>
+                <div class="job-entry">
+                    <div class="job-header">
+                        <span class="job-title">High School, Science, Mathematics and Social Science</span>
+                        <span class="job-company">M. S. Ramaiah Institute of Technology, Bengaluru</span>
+                    </div>
+                    <p>2004 - 2011 | GPA: 8.8/10</p>
+                    <p>Activities and societies: National Integration Program </p>
+                    <p>I was part of one year MHRD National Integration Program which aims to promote understanding of the diversity and plurality of India's culture and its people.</p>
+                </div>
+                <p>Languages: English (Professional), Kannada (Native), Hindi (Bilingual)</p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Manjunath Meti. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
